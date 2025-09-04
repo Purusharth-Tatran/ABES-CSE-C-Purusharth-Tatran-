@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            display: grid;
+            background-color: brown;
+            grid-template-columns: auto auto auto auto auto;
+            padding: 12px;
+    
+        }
+        .a >div{
+            background-color: aquamarine;
+            padding: 30px;
+            margin: 10px;
+            text-align: center;
+            border: 5px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Section</th>
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Yash</td>
+                    <td>C</td>
+                    <td>CSE</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>CSE</td>
+                </tr>
+            </table>
+        </div>
+        <div>Monday</div>
+        <div>BCS501</div>
+        <div>BCS551</div>
+        <div>BCS504</div>
+    </div>
+</body>
+</html>
