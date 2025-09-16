@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Multiplication Table</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <table id="resultTable">
+        <tr>
+            <th>Table of 2</th>
+            <th>Table of 3</th>
+            <th>Even/Odd for 2</th>
+            <th>Even/Odd for 3</th>
+        </tr>
+    </table>
+    
+
+    <script>
+        for(var x=1;x<=10;x++)
+{
+ var y=x*2;
+ document.write(y,"<br>");
+}    
+for(var a=1;a<=10;a++)
+{
+ var b=a*3;
+ document.write(b,"<br>");
+}    
+if(y!=b){
+    document.write(y);
+}
+</script>
+</body>
+</html>

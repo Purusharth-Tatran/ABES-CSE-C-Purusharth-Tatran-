@@ -13,15 +13,33 @@
       }
     </style>
   </head>
-  <body>
-    <div id="adi">
+  <body id="b1">
+    <!-- <div id="adi">
       <button onclick="handleClick()">Click</button>
       <p id="hi"></p>
     </div>
     <script>
       function handleClick() {
         document.getElementById("hi").innerHTML = "<h1>Hello</h1>";
-      }
+      } -->
+   
+      <button id="ho1" onclick="red()">Red</button>
+      <button id="ho2" onclick="green()">Green</button>
+      <button id="ho3" onclick="blue()">Blue</button>
+    <script>
+        function red(){
+         document.getElementById('b1').style.backgroundColor="red";
+         document.getElementById('ho1').style.background="red";
+
+        }
+        function green(){
+         document.getElementById('b1').style.backgroundColor="green";
+        }
+        function blue(){
+         document.getElementById('b1').style.backgroundColor="blue";
+        }
+       
+        
     </script>
   </body>
 </html>

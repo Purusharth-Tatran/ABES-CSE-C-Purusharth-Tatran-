@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #card{
+            border: 5px solid red;
+            background-color: yellow;
+            width: 300px;
+            height: 300px;
+            margin-left: 500px;
+            margin-top: 200px;
+
+        }
+        #card1{
+            border: 5px solid red;
+            background-color: yellow;
+            width: 400px;
+            height: 600px;
+            margin-left: 500px;
+            margin-top: 200px;
+
+        }
+        #card2{
+            border: 5px solid red;
+            background-color: yellow;
+            width: 400px;
+            height: 600px;
+            margin-left: 500px;
+            margin-top: 200px;
+
+        }
+        #card3{
+            border: 5px solid red;
+            background-color: yellow;
+            width: 400px;
+            height: 600px;
+            margin-left: 500px;
+            margin-top: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+   <img src="!PT.png" alt="" height="70px" width="70px" style="border-radius: 50px; margin:20px;">
+   <h3 style="margin-left: 80px;margin-top: 0px;">Counting App</h3
+    <div>
+        <button id="h1" style="margin-left: 80px;">ADD+</button>
+        
+        <button id="h2"style="margin-left: 20px;">SUB-</button>
+        <p style="margin-left: 80px;" id="p1">0</p>
+        <p style="margin-left: 170px;;" id="p2">0</p>
+     </div>
+    </div>
+
+    <div id="card1">
+       <img src="!PT.png" alt="" width="400px" id="img">
+       <button style="margin-top: 150px; margin-left: 150px;" onclick="imageChange()">Click Here</button>
+    </div>
+    <div id="card2">
+       <img src="!PT.png" alt="" width="400px" id="img1">
+       <button style="margin-top: 150px; margin-left: 150px;" onclick="imageChange1()">Click Here</button>
+    </div>
+    <div id="card3">
+       <img src="!PT.png" alt="" width="400px" id="img2">
+       <button style="margin-top: 150px; margin-left: 150px;" onclick="imageChange2()">Click Here</button>
+    </div>
+    
+    <script>
+            var x=0;
+            const h1=document.getElementById('h1');
+            const p1=document.getElementById('p1');
+            h1.addEventListener('click',function(){
+                x++;
+                p1.textContent=x;
+            });
+            var y=0;
+            const h2=document.getElementById('h2');
+            const p2=document.getElementById('p2');
+            h2.addentListener('click',function(){
+                y--;
+                p2.textContent=y;
+            });
+        function imageChange(){
+            document.getElementById('img').style.display="none";
+        }
+        imageChange();
+        function imageChange1(){
+            document.getElementById('img1').style.display="none";
+        }
+        imageChange1();
+        function imageChange2(){
+            document.getElementById('img2').style.display="cover";
+        }
+        imageChange2();
+    </script>
+</body>
+</html>
