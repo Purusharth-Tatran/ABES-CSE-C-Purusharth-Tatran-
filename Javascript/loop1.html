@@ -2,41 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Multiplication Table</title>
+    <title>Multiplication Tables</title>
     <style>
         table, th, td {
             border: 1px solid black;
             border-collapse: collapse;
             padding: 8px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <h2>Multiplication Tables of 2 and 3 (excluding common elements)</h2>
     <table id="resultTable">
-        <tr>
-            <th>Table of 2</th>
-            <th>Table of 3</th>
-            <th>Even/Odd for 2</th>
-            <th>Even/Odd for 3</th>
-        </tr>
     </table>
-    
 
     <script>
-        for(var x=1;x<=10;x++)
-{
- var y=x*2;
- document.write(y,"<br>");
-}    
-for(var a=1;a<=10;a++)
-{
- var b=a*3;
- document.write(b,"<br>");
-}    
-if(y!=b){
-    document.write(y);
-}
-</script>
+        var tableContent = "<tr><th>Table of 2</th><th>Even/Odd</th><th>Table of 3</th><th>Even/Odd</th></tr>";
+
+        for (var i = 1; i <= 10; i++) {
+            var val2 = 2 * i;
+            var val3 = 3 * i;
+            tableContent += "<tr>";
+            tableContent += "<td>" + val2 + "</td>";
+            tableContent += "<td>" + (val2 % 2 === 0 ? "Even" : "Odd") + "</td>";
+            if (val3 % 2 !== 0) {
+                tableContent += "<td>" + val3 + "</td>";
+                tableContent += "<td>" + (val3 % 2 === 0 ? "Even" : "Odd") + "</td>";
+            } else {
+                tableContent += "<td></td><td></td>";
+            }
+            tableContent += "</tr>";
+        }
+
+        document.getElementById("resultTable").innerHTML = tableContent;
+    </script>
 </body>
 </html>
