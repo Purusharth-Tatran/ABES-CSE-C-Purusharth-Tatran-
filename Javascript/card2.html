@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Object Comparison</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px; /* space between cards */
+            margin: 20px;
+        }
+        #card1, #card2 {
+            background-color: yellow;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #result {
+            margin: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="card1">hello</div>
+        <div id="card2">hello</div>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        const person1 = {
+            firstName: "yash",
+            LastName: "tatran",
+            age: 40
+        };
+
+        const person2 = {
+            firstName: "yash",
+            LastName: "tatran",
+            age: 40
+        };
+
+        document.getElementById("card1").innerHTML = person1.age;
+        document.getElementById("card2").innerHTML = person2.age;
+
+        const resultDiv = document.getElementById("result");
+
+        if (JSON.stringify(person1) === JSON.stringify(person2)) {
+            resultDiv.innerHTML = "data is same";
+        } else {
+            resultDiv.innerHTML = "not same";
+        }
+    </script>
+</body>
+</html>
