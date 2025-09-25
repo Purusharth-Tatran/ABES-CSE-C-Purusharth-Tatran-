@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <script>
+        class Car{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+        }
+        const mycar1=new Car("ford",2024);
+        const mycar2=new Car("Lambo",2017);
+        const mycar3=new Car("Lambo",2017);
+        const mycar4=new Car("Lambo",2017);
+        const mycar5=new Car("Lambo",2017);
+        const mycar6=new Car("Lambo",2017);
+        const mycar7=new Car("Lambo",2017);
+
+        document.getElementById("p1").innerHTML=mycar1.name;
+        document.getElementById("p2").innerHTML=mycar2.name;
+        document.getElementById("p3").innerHTML=mycar3.name;
+        document.getElementById("p4").innerHTML=mycar4.name;
+        document.getElementById("p5").innerHTML=mycar5.name;
+        document.getElementById("p6").innerHTML=mycar6.name;
+        document.getElementById("p7").innerHTML=mycar7.name;
+        document.getElementById("p8").innerHTML=mycar1.year;
+    </script>
+</body>
+</html>

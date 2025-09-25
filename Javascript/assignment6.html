@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #card1 {
+        background-color: aquamarine;
+        height: 800px;
+        width: 800px;
+        display: flex;
+        justify-content: space-around;
+      }
+      #d1 {
+        background-color: yellow;
+        height: 100px;
+        width: 100px;
+        margin-top: 200px;
+      }
+      #d2 {
+        background-color: yellow;
+        height: 100px;
+        width: 100px;
+        margin-top: 200px;
+      }
+      #d3 {
+        background-color: yellow;
+        height: 100px;
+        width: 100px;
+        margin-top: 200px;
+      }
+      #img {
+        height: 10px;
+        width: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card1">
+      <div id="img">
+        <img
+          src="!PT.png"
+          alt=""
+          style="
+            height: 100px;
+            border-radius: 50px;
+            width: 100px;
+            margin-top: 10px;
+            margin-left: 10px;
+          "
+        />
+      </div>
+      <div id="d1">
+        <img
+          src="!PT.png"
+          alt=""
+          style="height: 40px; margin-left: 20px; margin-top: 20px"
+        />
+        <p id="p1" style="margin-left: 2px"></p>
+        <button><a href="apple.html">Click For apple</a></button>
+      </div>
+      <div id="d2">
+        <img
+          src="!PT.png"
+          alt=""
+          style="height: 40px; margin-left: 20px; margin-top: 20px"
+        />
+        <p id="p2" style="margin-left: 2px"></p>
+        <button><a href="samsung.html">Click For Samsung</a></button>
+      </div>
+      <div id="d3">
+        <img
+          src="!PT.png"
+          alt=""
+          style="height: 40px; margin-left: 20px; margin-top: 20px"
+        />
+        <p id="p3" style="margin-left: 1px"></p>
+        <button><a href="nokia.html">Click For Nokia</a></butto
+      </div>
+    </div>
+    <script>
+      const price = [
+       [" price :",250],["price:",100],["price :",190]
+      ];
+      document.getElementById('p1').innerHTML=price[0];
+      document.getElementById('p2').innerHTML=price[1];
+      document.getElementById('p3').innerHTML=price[2];
+    </script>
+  </body>
+</html>

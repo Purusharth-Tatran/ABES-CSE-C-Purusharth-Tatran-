@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #card1 {
+        background-color: aquamarine;
+        height: 1000px;
+        width: 1000px;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 200px;
+      }
+      #d1 {
+        background-color: yellow;
+        height: 300px;
+        width: 300px;
+        margin-top: 200px;
+      }
+      #d2 {
+        background-color: yellow;
+        height: 300px;
+        width: 300px;
+        margin-top: 200px;
+      }
+      #d3 {
+        background-color: yellow;
+        height: 300px;
+        width: 300px;
+        margin-top: 200px;
+      }
+      #img {
+        height: 100px;
+        width: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="productlist">
+
+    </div>
+    <script>
+      const product = [
+        s1={
+          "price":21,
+          "brand":"Nokia",
+          "type":"Mobile",
+        },
+        s2={
+          "price":21,
+          "brand":"Vivo",
+          "type":"Mobile",
+        },
+        s3={
+          "price":21,
+          "brand":"OPPO",
+          "type":"Mobile",
+        },
+      ]
+
+      for(let i = 0; i< product.length ; i++) {
+        let div =  document.createElement("div");
+
+        let h3 = document.createElement("h3");
+        h3.innerText = product[i].brand;
+        div.appendChild(h3);
+
+
+
+
+
+
+console.log(product[i])
+let prod = document.querySelector(".productlist");
+      prod.appendChild(div);
+      }
+
+      
+
+      
+      
+
+
+    </script>
+  </body>
+</html>
