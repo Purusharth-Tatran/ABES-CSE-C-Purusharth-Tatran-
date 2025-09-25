@@ -7,16 +7,33 @@
 </head>
 <body>
     <script>
-        function sum(a,b){
-            console.log(a+b)
+        // function sum(a,b){
+        //     console.log(a+b)
 
-        }
-        // sum(82,32);
+        // }
+        // // sum(82,32);
 
-        function cal(a,b,sumcallback){
-            sumcallback(a,b);
+        // function cal(a,b,sumcallback){
+        //     sumcallback(a,b);
+        // }
+        // cal(20,33,sum);
+
+        function getData(dataId,getNextdata){
+            setTimeout(()=>{
+                console.log("Data",dataId);
+                if(getNextdata){
+                    getNextdata()
+                }
+            },(2000));
         }
-        cal(20,33,sum);
+        getData(1,()=>{//call back hell
+            getData(2,()=>{
+                getData(3,()=>{
+
+                })
+            })
+        });
+        
     </script>
 </body>
 </html>
