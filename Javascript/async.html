@@ -18,21 +18,22 @@
         // }
         // cal(20,33,sum);
 
-        function getData(dataId,getNextdata){
-            setTimeout(()=>{
-                console.log("Data",dataId);
-                if(getNextdata){
-                    getNextdata()
-                }
-            },(2000));
-        }
-        getData(1,()=>{//call back hell
-            getData(2,()=>{
-                getData(3,()=>{
+        // function getData(dataId,getNextdata){
+        //     setTimeout(()=>{
+        //         console.log("Data",dataId);
+        //         if(getNextdata){
+        //             getNextdata()
+        //         }
+        //     },(2000));
+        // }
+        // getData(1,()=>{//call back hell
+        //     getData(2,()=>{
+        //         getData(3,()=>{
 
-                })
-            })
-        });
+        //         })
+        //     })
+        // });
+        
         
     </script>
 </body>
