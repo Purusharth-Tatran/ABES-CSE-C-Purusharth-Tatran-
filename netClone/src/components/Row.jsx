@@ -1,0 +1,18 @@
+import React from 'react';
+import MovieCard from './MovieCard';
+import './Row.css';
+
+const Row = ({ title, movies }) => {
+  return (
+    <div className="row">
+      <h2 className="row__title">{title}</h2>
+      <div className="row__posters">
+        {movies.map((movie) => (
+          <MovieCard key={movie.id} movie={movie} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Row;
