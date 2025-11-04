@@ -1,0 +1,13 @@
+#book{
+    border: 5px solid red;
+    height: 500px;
+    width: 300px;
+    background-color: burlywood;
+
+}
+#img{
+    margin-left: 70px;
+    margin-top: 20px;
+    height: 150px;
+    width: 150px;
+}
