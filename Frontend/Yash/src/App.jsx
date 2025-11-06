@@ -7,6 +7,12 @@ import Assign1 from "./components1/Project2";
 import Assign2 from "./components2/Project3";
 import Assign3 from "./components3/Project4";
 import Count1 from "../../BookApp/src/components/count";
+import Link from './components/Link';
+    import 'bootstrap/dist/css/bootstrap.min.css';
+    import 'jquery/dist/jquery.min.js';
+    import 'popper.js/dist/umd/popper.min.js';
+    import 'bootstrap/dist/js/bootstrap.min.js';
+    import Register from './components/Register';
 
 function App() {
  
@@ -30,7 +36,9 @@ function App() {
      <br/>
      <Assign3/>
      <br/> */}
-     <Count1/>
+     {/* <Count1/> */}
+     {/* <Link/> */}
+   <Register/>
     </div>
   )
 }
